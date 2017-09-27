@@ -4,9 +4,8 @@ function doTheMath(tendered, amtDue) {
     return weOwe;
 };
 
-
-
-function handleClickEvent() {
+function handleClickEvent(e) {
+    e.preventDefault();
     let amtDue = document.getElementById("amount-due").value;
     let tendered = document.getElementById("amount-received").value;
     let result = doTheMath(tendered, amtDue);

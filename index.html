@@ -10,31 +10,32 @@
 <body>
     <!-- Write your markup here -->
     <h1>Change Calculator</h1>
-    <form id="theForm">
+    <form onSubmit='handleClickEvent()'>
         <label>Total amount due</label>
         <input id="amount-due" type="text" step=".01"></input>
         <label>Amount tendered</label>
         <input id="amount-received" type="text" step=".01"></input><br>
         <label>Twenties</label>
-        <p id='twenties-output'>0</p>
+        <p id='twenties-output'></p>
         <label>Tens</label>
-        <p id='tens-output'>0</p>
+        <p id='tens-output'></p>
         <label>Fives</label>
-        <p id='fives-output'>0</p>
+        <p id='fives-output'></p>
         <label>Dollars</label>
-        <p id="dollars-output">0</p>
+        <p id="dollars-output"></p>
         <label>Quarters</label>
-        <p id="quarters-output">0</p>
+        <p id="quarters-output"></p>
         <label>Dimes</label>
-        <p id="dimes-output">0</p>
+        <p id="dimes-output"></p>
         <label>Nickels</label>
-        <p id="nickels-output">0</p>
+        <p id="nickels-output"></p>
         <label>Pennies</label>
-        <p id="pennies-output">0</p>
+        <p id="pennies-output"></p>
         <label>Total Change Due:</label>
-        <p id="total-change-output">0</p>
+        <p id="total-change-output"></p>
+        <button id="calculate-change" type='submit'>Submit</button>
     </form>
-    <button id="calculate-change" onclick="handleClickEvent()">Submit</button>
+
     <!-- Don't forget to add your <script> tag here -->
     <script src="main.js" charset="utf-8"></script>
 </body>
